@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'hamlit'
 gem 'simple_form'
+gem 'annotate'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
