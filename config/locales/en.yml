@@ -14,3 +14,11 @@ en:
       name: Name
     new_category: Nueva categoria
   hello: Hello world
+  tasks:
+    Back: Back
+    form:
+      category: Category
+      description: Description
+      duedate: Duedate
+      name: Name
+    new_task: New task
