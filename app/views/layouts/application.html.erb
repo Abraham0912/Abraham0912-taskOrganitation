@@ -10,6 +10,7 @@
   </head>
 
   <body>
+    <%= link_to 'cerrar sesión', destroy_user_session_path, method: :delete %> <%# link_to es un helper en el que por medio del url destroy_user_session_path de la gema devise por medio del metodo que puede ser get,post, en este caso delete %>
     <%= yield %>
   </body>
 </html>
