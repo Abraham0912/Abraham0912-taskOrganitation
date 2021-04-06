@@ -5,11 +5,11 @@ es:
       category:
         one: Categoría
         others: Categorías
+      create:
+        one: Crear
       task:
         one: Tarea
         others: Tareas
-      create:
-        one: Crear
   categories:
     Back: Atras
     form:
@@ -17,6 +17,9 @@ es:
       name: Nombre
     new_category: Nueva categoria
   hello: Hello world
+  task:
+    errors:
+      invalid_due_date: Fecha de vencimiento invalida 
   tasks:
     Back: Atras
     form:

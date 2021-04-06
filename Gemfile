@@ -33,6 +33,7 @@ gem 'simple_form'
 gem 'annotate'
 gem 'i18n-tasks', '0.9.34'
 gem 'rails-i18n'
+gem 'devise' #Gema para sistema de sesion
 #Gema agregadas por mi_FIN
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

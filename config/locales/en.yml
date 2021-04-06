@@ -7,6 +7,9 @@ en:
         others: Categorías
       create:
         one: Crear
+      task:
+        one: Tarea
+        others: Tareas
   categories:
     Back: Back
     form:
@@ -14,6 +17,9 @@ en:
       name: Name
     new_category: Nueva categoria
   hello: Hello world
+  task:
+    errors:
+      invalid_due_date: Invalid due date
   tasks:
     Back: Back
     form:
