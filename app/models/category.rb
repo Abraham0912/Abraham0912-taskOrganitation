@@ -10,4 +10,8 @@
 #
 class Category < ApplicationRecord
     has_many :tasks
+
+
+    validates :name, :description, presence: true#Campos requeridos name  y decription
+    validates :name, uniqueness: { case_sensitive: false }#Valores unicos en :name y diferencia entre mayusculas y minusculas
 end
