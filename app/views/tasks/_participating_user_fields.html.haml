@@ -1,3 +1,3 @@
 .nested-fields 
-= f.input :user_id, as: :select, collection: User.all - [current_user]
-= f.input  :role
+= f.input :user_id, as: :select, collection: User.all - [current_user] #Mostraremos todos los usuarios menos el actual
+= f.input  :role #1 = responsable  2 = seguidor
