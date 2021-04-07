@@ -22,6 +22,7 @@ class TasksController < ApplicationController
   # POST /tasks or /tasks.json
   def create
     @task = Task.new(task_params)
+    @task.owner = current_user #Usamos el metodo owner(pertenece) y lo igualamos al metodo curren_user de la gema devise que puede ser usada en controladores y vistas
 
     respond_to do |format|
       if @task.save
