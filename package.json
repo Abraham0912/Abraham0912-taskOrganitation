@@ -2,10 +2,14 @@
   "name": "task-organizacion",
   "private": true,
   "dependencies": {
+    "@rails/webpacker": "5.2.1",
     "bootstrap": "^4.6.0",
     "cocoon": "github:nathanvda/cocoon#c24ba53",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
     "roboto-fontface": "^0.10.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.2"
   }
 }

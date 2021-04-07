@@ -4,7 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.8'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.5'
+gem 'rails', '~> 6.1', '>= 6.1.3.1'
+gem 'actionpack', '6.1.3.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
@@ -35,6 +36,7 @@ gem 'i18n-tasks', '0.9.34'
 gem 'rails-i18n'
 gem 'devise' #Gema para sistema de sesion
 gem 'cocoon'#Gema para formularios anidados
+gem 'webpacker'
 #Gema agregadas por mi_FIN
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
