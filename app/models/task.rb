@@ -12,7 +12,7 @@
 #
 class Task < ApplicationRecord
   belongs_to :category
-  belongs_to :owner, class_name: 'User'
+  belongs_to :owner, class_name: 'User'#Pertenece a :owner, como esa tabla no existe hacemos referencia al modelo User
   
   validates :name, :description, presence: true#Campos requeridos name  y decription
   validates :name, uniqueness: { case_sensitive: false }#Valores unicos en :name y diferencia entre mayusculas y minusculas
