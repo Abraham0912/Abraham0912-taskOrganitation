@@ -17,4 +17,11 @@
 
 console.log('Hello World from Webpacker')
 
-import 'cocoon'
+//import 'cocoon'
+
+require("@rails/ujs").start()
+require("turbolinks").start()
+require("@rails/activestorage").start()
+require("channels")
+
+require('cocoon')

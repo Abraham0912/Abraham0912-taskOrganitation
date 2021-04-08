@@ -22,6 +22,9 @@ class Task < ApplicationRecord
   validates :name, :description, presence: true#Campos requeridos name  y decription
   validates :name, uniqueness: { case_sensitive: false }#Valores unicos en :name y diferencia entre mayusculas y minusculas
   validate :due_date_validity #Validando por medio de una funcion creada por mi, para ello hacemos uso de la funcion "validate"
+
+  accepts_nested_attributes_for :participating_users, allow_destroy: true#El metodo "accepts_nested_attributes_for"Valida que Task.rb si es capas de validar informacion anidada de participating_users y ademas permite eliminarla
+
   def due_date_validity
     return if due_date.blank?
     return if due_date > Date.today
