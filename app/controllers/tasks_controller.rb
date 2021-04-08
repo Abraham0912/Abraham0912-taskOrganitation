@@ -1,8 +1,11 @@
 class TasksController < ApplicationController
-  load_and_authorize_resource #Metodo para que gem cancancan se conecte con ability.rb
+  #load_and_authorize_resource #Metodo para que gem cancancan se conecte con ability.rb
   before_action :set_task, only: %i[ show edit update destroy ]
 
   # GET /tasks or /tasks.json
+  # def index
+  #   @tasks = Task.all
+  # end
   def index
     @tasks = Task.joins(:participants).where(
       'owner_id = ? OR participants.user_id = ?',
