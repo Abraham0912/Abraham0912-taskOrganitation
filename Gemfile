@@ -36,6 +36,7 @@ gem 'i18n-tasks', '0.9.34'
 gem 'rails-i18n'
 gem 'devise' #Gema para sistema de sesion
 gem 'cocoon'#Gema para formularios anidados
+gem 'cancancan' #Permisos de acceso users
 gem 'webpacker'
 #Gema agregadas por mi_FIN
 # Use ActiveStorage variant
@@ -64,8 +65,8 @@ group :development do
   gem 'hamlit-rails'
   #Gema agregadas por mi_FIN
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  # gem 'spring'
+  # gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
 
