@@ -3,6 +3,10 @@ class ApplicationController < ActionController::Base
 
     before_action :authenticate_user! #:authenticate_user! metodo de la gema devise
 
+    # rescue_form CanCan::AccessDenied do |exception|
+    #     redirect_to root_path
+    # end
+
     def set_locale#Esta accion o metodo indica el idioma que esta en config/locales/es.yml
         I18n.locale = 'es'
     end
